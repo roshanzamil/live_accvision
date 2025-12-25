@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "@/plugins";
@@ -79,7 +80,7 @@ const DigitalMarketingHero = () => {
                   <h3
                     className="sec-title title-left"
                     ref={titleLeft}
-                    style={{ color: "#325841" }}
+                    style={{ color: "#325841", fontWeight: 100 }}
                   >
                     Acc
                   </h3>
