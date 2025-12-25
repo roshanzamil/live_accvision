@@ -62,6 +62,7 @@ const DigitalMarketingHero = () => {
       heroArea.current.classList.add("start-video");
       headerArea.classList.add("bg-white");
       heroTextAnim.current.style.color = "#145274";
+      videoClose.style.color = "#145274";
     } else {
       wrapper.current.style.zIndex = "999";
       video.style.display = "block";
@@ -69,6 +70,7 @@ const DigitalMarketingHero = () => {
       heroArea.current.classList.remove("start-video");
       headerArea.classList.remove("bg-white");
       heroTextAnim.current.style.color = "";
+      video.style.color = "";
     }
   };
   return (
