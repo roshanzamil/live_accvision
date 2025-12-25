@@ -117,46 +117,46 @@ const DigitalMarketingTestimonial = () => {
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Accvision has been a game-changer for our business. Their bookkeeping services are impeccable, and knowing our financials are in expert hands gives us incredible peace of mind. We can finally focus on growth!
+                          Juggling everything as a new cafe owner was overwhelming. Accvision stepped in and completely streamlined our bookkeeping and payroll. Their team is responsive, professional, and genuinely cares about our success. I can't imagine running my business without them.
                         </p>
-                        <h2 className="client__name-3">John Doe</h2>
-                        <h3 className="client__role-3">CEO, Tech Startup</h3>
+                        <h2 className="client__name-3">Sarah Chen</h2>
+                        <h3 className="client__role-3">Founder, The Bloom Cafe</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Navigating tax season used to be a nightmare. The team at Accvision made it a breeze. Their tax planning is strategic and saved us a significant amount. Highly recommended for any business.
+                          Tax planning was always a major source of stress for our company. Accvision's strategic advice not only made the process painless but also identified significant savings we had been missing for years. Their expertise is truly top-tier.
                         </p>
-                        <h2 className="client__name-3">Jane Smith</h2>
-                        <h3 className="client__role-3">Small Business Owner</h3>
+                        <h2 className="client__name-3">Michael Rodriguez</h2>
+                        <h3 className="client__role-3">Director, R&D Innovations Inc.</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Starting a new business is daunting, but Accvision made the registration and setup process seamless. Their guidance on business structure was invaluable. We couldn’t have done it without them.
+                          Starting my gallery felt like navigating a maze of paperwork. Accvision handled our entire business setup, from registration to licensing, with incredible efficiency. They took the complexity out of the process, letting me focus on the art.
                         </p>
-                        <h2 className="client__name-3">Sam Wilson</h2>
-                        <h3 className="client__role-3">Founder, Creative Agency</h3>
+                        <h2 className="client__name-3">Emily Davis</h2>
+                        <h3 className="client__role-3">Owner, Artisan's Gallery</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          The annual trade license renewal was always a hassle we dreaded. Accvision handles it for us now, and it’s completely stress-free. Their proactive approach ensures we’re always compliant.
+                          The annual trade license renewal was always a headache. Accvision handles it for us now, and it’s completely stress-free. Their proactive and timely service ensures we're always compliant, which is a huge weight off our shoulders.
                         </p>
-                        <h2 className="client__name-3">Emily Brown</h2>
-                        <h3 className="client__role-3">Restaurant Owner</h3>
+                        <h2 className="client__name-3">David Lee</h2>
+                        <h3 className="client__role-3">General Manager, Lee's Logistics</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Accvision’s business support services have been transformative. They helped us implement internal controls that have streamlined our entire operation. Their strategic advice is top-notch.
+                          We engaged Accvision to help us implement better internal controls, and the results have been phenomenal. Our processes are more efficient, and their team provided invaluable support that has set us up for sustainable growth.
                         </p>
-                        <h2 className="client__name-3">Michael Johnson</h2>
-                        <h3 className="client__role-3">Managing Director</h3>
+                        <h2 className="client__name-3">Jessica Thompson</h2>
+                        <h3 className="client__role-3">COO, BuildRight Construction</h3>
                       </div>
                     </SwiperSlide>
                   </div>
