@@ -8,6 +8,7 @@ import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingPr
 import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
 import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
+import CreativeAgencyService from "@/components/service/CreativeAgencyService";
 
 export default function DigitalMarketing() {
   return (
@@ -22,6 +23,7 @@ export default function DigitalMarketing() {
           <DigitalMarketingHero />
           <DigitalMarketingBrand />
           <DigitalMarketingAbout />
+          <CreativeAgencyService />
           <DigitalMarketingService />
           <DigitalMarketingProtfolio />
           <DigitalMarketingTestimonial />
