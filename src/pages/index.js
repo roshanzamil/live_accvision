@@ -7,7 +7,6 @@ import DigitalMarketingService from "@/components/service/DigitalMarketingServic
 import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingProtfolio";
 import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
-import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";
 import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
 
 export default function DigitalMarketing() {
@@ -27,7 +26,6 @@ export default function DigitalMarketing() {
           <DigitalMarketingProtfolio />
           <DigitalMarketingTestimonial />
           <DigitalMarketingWorkflow />
-          <DigitalMarketingPrice />
           <DigitalMarketingBlog />
         </RootLayout>
       </main>
