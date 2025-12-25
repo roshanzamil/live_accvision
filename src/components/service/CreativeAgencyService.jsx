@@ -67,97 +67,91 @@ const CreativeAgencyService = () => {
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Branding <span>design</span>
+                      Accounting & <span>Bookkeeping</span>
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                    We provide meticulous accounting and bookkeeping to ensure your financials are accurate and up-to-date.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Financial Statements</li>
+                    <li>+ General Ledger</li>
+                    <li>+ Payroll</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Interactive <span>Design</span>{" "}
+                      Tax <span>Services</span>{" "}
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                    Our expert tax services help you navigate complex tax laws and minimize your tax liabilities.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Tax Planning</li>
+                    <li>+ Tax Preparation</li>
+                    <li>+ IRS Representation</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Web & Mobile <span>Development</span>{" "}
+                      Business <span>Setup</span>{" "}
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                    We assist with business registration and setup to get your new venture off to a strong start.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Entity Selection</li>
+                    <li>+ Registration</li>
+                    <li>+ Licensing</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Digital <span> Marketing</span>{" "}
+                    Trade License <span>Renewal</span>{" "}
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                    We handle the annual renewal of your trade license, ensuring your business remains compliant.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Timely Renewals</li>
+                    <li>+ Documentation</li>
+                    <li>+ Compliance</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Business <span>Strategy</span>
+                      Business <span>Support</span>
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                   Streamline your operations with our business support services and internal control implementation.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Process Improvement</li>
+                    <li>+ Internal Controls</li>
+                    <li>+ Strategic Planning</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   <Link href="/service-details">
                     <h3 className="service__title-7">
-                      Illustration <span>Modelling</span>{" "}
+                      Financial<span>Advisory</span>{" "}
                     </h3>
                   </Link>
                   <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
+                   Our advisory services provide the insights you need to achieve your financial objectives and grow your business.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
+                    <li>+ Budgeting & Forecasting</li>
+                    <li>+ Financial Analysis</li>
+                    <li>+ Strategic Advice</li>
                   </ul>
                 </div>
               </div>

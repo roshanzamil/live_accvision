@@ -134,28 +134,25 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
-                      why <br />
-                      choose us
+                      Our <br />
+                      Approach
                     </h2>
                     <h3 className="sec-title">
-                      Keword,Research Strategy, Survey, & Analytics
+                      Discovery, Strategy, & Implementation
                     </h3>
                     <p>
-                      Attention, we take out our round glasses and our sweater
-                      with elbow patches to go back to the origins of the user
-                      experience: the first mention of the user and its
-                      importance was born in the
+                     Our process begins with a deep dive into your business to understand your unique needs. We then craft a tailored strategy and implement solutions designed for your success, ensuring a seamless and effective partnership.
                     </p>
                   </div>
                   <ul className="research__tools">
                     <li>
-                      <a href="#">Google</a>
+                      <a href="#">Analysis</a>
                     </li>
                     <li>
-                      <a href="#">pinterest</a>
+                      <a href="#">Strategy</a>
                     </li>
                     <li>
-                      <a href="#">Instagram</a>
+                      <a href="#">Execution</a>
                     </li>
                   </ul>
                 </div>
@@ -163,13 +160,12 @@ const DigitalMarketingWorkflow = () => {
                   <div className="research__list">
                     <div className="research__item">
                       <div className="research__number">
-                        <span>60%</span>
+                        <span>90%</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Strategy</h4>
+                        <h4 className="research__title">Client Retention</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          Our commitment to excellence and client success has resulted in long-lasting partnerships.
                         </p>
                       </div>
                     </div>
@@ -179,23 +175,21 @@ const DigitalMarketingWorkflow = () => {
                         <span>95%</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Audience</h4>
+                        <h4 className="research__title">Client Satisfaction</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          We pride ourselves on delivering services that consistently exceed our clients' expectations.
                         </p>
                       </div>
                     </div>
 
                     <div className="research__item">
                       <div className="research__number">
-                        <span>70%</span>
+                        <span>85%</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Keyword</h4>
+                        <h4 className="research__title">Compliance Rate</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          Our meticulous approach ensures your business remains compliant with all regulations.
                         </p>
                       </div>
                     </div>
@@ -211,8 +205,8 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-12">
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
-                      Why <br />
-                      Choose Us
+                      Proven <br />
+                      Results
                     </h2>
                   </div>
                 </div>
@@ -221,28 +215,28 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                   <div className="counter__wrapper-3">
                     <div className="counter__item-3">
-                      <h2 className="counter__number count1">25k</h2>
+                      <h2 className="counter__number count1">500+</h2>
                       <p>
-                        Project <br />
+                        Projects <br />
                         completed
                       </p>
                     </div>
                     <div className="counter__item-3">
-                      <h2 className="counter__number count2">8k</h2>
+                      <h2 className="counter__number count2">250+</h2>
                       <p>
                         Happy <br />
                         customers
                       </p>
                     </div>
                     <div className="counter__item-3">
-                      <h2 className="counter__number count3">15</h2>
+                      <h2 className="counter__number count3">10+</h2>
                       <p>
                         Years <br />
                         experiences
                       </p>
                     </div>
                     <div className="counter__item-3">
-                      <h2 className="counter__number count4">98</h2>
+                      <h2 className="counter__number count4">50+</h2>
                       <p>
                         Awards <br />
                         achievement
@@ -271,7 +265,7 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-12">
                   <div className="cta__content-3">
                     <p className="cta__sub-title-2">
-                      Have you project in mind?
+                      Have a project in mind?
                     </p>
                     <h2 className="cta__title-2">
                       Let’s make something great together!

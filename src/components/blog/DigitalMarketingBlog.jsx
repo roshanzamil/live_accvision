@@ -60,13 +60,11 @@ const DigitalMarketingBlog = () => {
               <div className="sec-title-wrapper text-anim pt-130">
                 <h2 className="sec-sub-title">Recent Blog</h2>
                 <h3 className="sec-title title-anim">
-                  Read Updated <br />
-                  Journal
+                  Accounting & Tax <br />
+                  Insights
                 </h3>
                 <p>
-                  Read our blog and try to see everything from every
-                  perspective. Our passion lies in making everything accessible
-                  and aesthetic for everyone.{" "}
+                  Read our blog for the latest perspectives on accounting, tax, and business strategy. We are passionate about making financial knowledge accessible to everyone.
                 </p>
               </div>
             </div>
@@ -97,11 +95,11 @@ const DigitalMarketingBlog = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    <Link href="/category">Tax Tips</Link> . 02 May 2023
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                      How to bring fold to your startup company with Axtra
+                      Top 5 Tax Deductions for Small Businesses
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">
@@ -138,11 +136,11 @@ const DigitalMarketingBlog = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    <Link href="/category">Bookkeeping</Link> . 15 June 2023
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                      How to manage a talented and successful design team
+                      The Importance of Accurate Bookkeeping for Startups
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">

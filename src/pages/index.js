@@ -12,8 +12,8 @@ export default function DigitalMarketing() {
   return (
     <div>
       <Head>
-        <title>AccVision</title>
-        <meta name="description" content="AccVision - Accounting Software" />
+        <title>Accvision</title>
+        <meta name="description" content="Accvision - Accounting Software" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>

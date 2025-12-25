@@ -45,18 +45,13 @@ const DigitalMarketingAbout = () => {
               <div className="sec-title-wrapper">
                 <h2 className="sec-sub-title title-anim">Who We Are</h2>
                 <h3 className="sec-title title-anim">
-                  We are leading digital marketing agency.
+                  Your Trusted Partner in Financial Excellence.
                 </h3>
               </div>
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
                   <p>
-                    We’re a team of strategic mdigital marketing working
-                    globally with largest brands, We believe that progress only
-                    happens when you refused to play things safe. We combine
-                    ideas and behaviors, and insights with design, technological
-                    data to produce brand experiences that customers love our
-                    services.
+                    Accvision Accounting LLC is a team of dedicated professionals providing expert accounting and business support services. We empower businesses to achieve their objectives by streamlining processes and implementing robust internal controls. Our passion is your financial success.
                   </p>
                   <div className="btn_wrapper">
                     <Link
