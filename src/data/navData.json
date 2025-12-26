@@ -62,7 +62,7 @@
             },
             {
               "name": "Service V6 Dark",
-              "link": "/service-v6-dark"
+              "link": "/service-dark-v6"
             },
             {
               "name": "Service Details",
@@ -124,43 +124,6 @@
             {
               "name": "Portfolio Details Dark",
               "link": "/portfolio-details-dark"
-            }
-          ]
-        },
-        {
-          "title": "Team",
-          "data": [
-            {
-              "name": "Team",
-              "link": "/team"
-            },
-            {
-              "name": "Team Dark",
-              "link": "/team-dark"
-            },
-            {
-              "name": "Team Details",
-              "link": "/team-details"
-            },
-            {
-              "name": "Team Details Dark",
-              "link": "/team-details-dark"
-            },
-            {
-              "name": "Career",
-              "link": "/career"
-            },
-            {
-              "name": "Career Dark",
-              "link": "/career-dark"
-            },
-            {
-              "name": "Job Details",
-              "link": "/job-details"
-            },
-            {
-              "name": "Job Details Dark",
-              "link": "/job-details-dark"
             }
           ]
         },
@@ -307,26 +270,9 @@
     },
     {
       "nav_name": "Blog",
-      "link": "blog",
-      "type": "dropdown",
-      "sub_nav": [
-        {
-          "name": "Blog",
-          "link": "/blog"
-        },
-        {
-          "name": "Blog V2",
-          "link": "/blog-v2"
-        },
-        {
-          "name": "Category",
-          "link": "/category"
-        },
-        {
-          "name": "Blog Details",
-          "link": "/blog-details"
-        }
-      ]
+      "link": "/blog",
+      "type": "",
+      "sub_nav": []
     },
     {
       "nav_name": "Contact",
