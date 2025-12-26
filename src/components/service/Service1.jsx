@@ -89,7 +89,7 @@ const Service1 = () => {
   }, []);
   return (
     <>
-      <section className="service__area-6">
+      <section className="service__area-6 pt-150">
         <div className="container">
           <div className="row inherit-row">
             <div className="col-xxl-12">
