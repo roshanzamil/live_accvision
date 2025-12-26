@@ -74,9 +74,9 @@ const DigitalMarketingHero = () => {
       videoClose.style.display = "none";
       heroArea.current.classList.remove("start-video");
       headerArea.classList.remove("bg-white");
-      subTitleRef.current.style.color = "";
-      titleLeft.current.style.color = "";
-      titleRight.current.style.color = "";
+      subTitleRef.current.style.color = "#145274";
+      titleLeft.current.style.color = "#325841";
+      titleRight.current.style.color = "#4eba72";
       heroTextAnim.current.style.color = "";
       videoClose.style.color = "";
       videoTitle.current.style.color = "";
