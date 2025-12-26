@@ -35,7 +35,7 @@ const BlogDetailsPage = () => {
     <>
       <Head>
         <title>{blog.title}</title>
-        <meta name="description" content={blog.title} />
+        <meta name="description" content={blog.content.introduction} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
