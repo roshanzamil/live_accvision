@@ -16,7 +16,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout>
+        <RootLayout header="header1" footer="footer1">
           <AboutHero />
           <AboutStory />
           <AboutCounter />
