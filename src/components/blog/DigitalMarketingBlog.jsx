@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
@@ -80,7 +81,7 @@ const DigitalMarketingBlog = () => {
               <div className="col-xxl-6 col-xl-6 col-lg-6" key={blog.id}>
                 <article className="blog__item-3">
                   <div className="blog__img-wrapper-3">
-                    <Link href="/blog-details">
+                    <Link href={`/blog/${blog.slug}`}>
                       <div className="img-box">
                         <Image
                           priority
@@ -88,15 +89,7 @@ const DigitalMarketingBlog = () => {
                           height={430}
                           className="image-box__item"
                           src={blog.image}
-                          alt="Blog Thumbnail"
-                        />
-                        <Image
-                          priority
-                          width={580}
-                          height={430}
-                          className="image-box__item"
-                          src={blog.image}
-                          alt="Blog Thumbnail"
+                          alt={blog.title}
                         />
                       </div>
                     </Link>
@@ -106,11 +99,11 @@ const DigitalMarketingBlog = () => {
                       <Link href="/category">{blog.category}</Link> . {blog.date}
                     </h4>
                     <h5>
-                      <Link href="/blog-details" className="blog__title-3">
+                      <Link href={`/blog/${blog.slug}`} className="blog__title-3">
                         {blog.title}
                       </Link>
                     </h5>
-                    <Link href="/blog-details" className="blog__btn">
+                    <Link href={`/blog/${blog.slug}`} className="blog__btn">
                       Read More{" "}
                       <span>
                         <i className="fa-solid fa-arrow-right"></i>
