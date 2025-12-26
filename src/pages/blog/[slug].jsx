@@ -12,11 +12,18 @@ const BlogDetailsPage = () => {
   const router = useRouter();
   const { slug } = router.query;
   const [blog, setBlog] = useState(null);
+  const [relatedBlogs, setRelatedBlogs] = useState([]);
 
   useEffect(() => {
     if (slug) {
-      const foundBlog = blogData.blogs.find((b) => b.slug === slug);
+      const allBlogs = blogData.blogs;
+      const foundBlog = allBlogs.find((b) => b.slug === slug);
       setBlog(foundBlog);
+
+      if (foundBlog) {
+        const related = allBlogs.filter((b) => b.id !== foundBlog.id);
+        setRelatedBlogs(related);
+      }
     }
   }, [slug]);
 
@@ -34,7 +41,7 @@ const BlogDetailsPage = () => {
       <main>
         <RootLayout header="header3" footer="footer3">
           <BlogDetails1 blog={blog} />
-          <BlogRelated />
+          <BlogRelated blogs={relatedBlogs} />
           <DigitalAgencyCTA />
         </RootLayout>
       </main>
