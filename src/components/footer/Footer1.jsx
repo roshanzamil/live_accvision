@@ -168,7 +168,10 @@ export default function Footer1() {
               <div className="col-xxl-4 col-xl-4 col-lg-4">
                 <div className="footer__copyright-3">
                   <p>
-                    © 2026 | All rights reserved by BroCrypt
+                    © 2026 | All rights reserved by{" "}
+                    <a href="https://brocrypt.com/" target="_blank">
+                      BroCrypt
+                    </a>
                   </p>
                 </div>
               </div>
