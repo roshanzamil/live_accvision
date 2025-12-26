@@ -19,14 +19,14 @@ const Contact1 = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title-2 animation__char_come" ref={charAnim}>
-                  Let’s get in touch
+                  Get in Touch
                 </h2>
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="contact__text">
                 <p>
-                  Great! We're excited to hear from you and let's start something special togerter. call us for any inquery.
+                  We're here to help your business thrive. For any inquiries, or to schedule a consultation, please don't hesitate to reach out.
                 </p>
               </div>
             </div>
@@ -38,8 +38,7 @@ const Contact1 = () => {
                   className="sub-title-anim-top animation__word_come"
                   ref={wordAnim}
                 >
-                  Don't be afraid man !<br />
-                  say hello
+                  Let's start a conversation.
                 </h3>
                 <ul>
                   <li>
