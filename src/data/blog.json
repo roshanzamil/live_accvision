@@ -1,0 +1,18 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Top 5 Tax Deductions for Small Businesses",
+      "category": "Tax Tips",
+      "date": "02 May 2023",
+      "image": "/assets/imgs/blog/3/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Importance of Accurate Bookkeeping for Startups",
+      "category": "Bookkeeping",
+      "date": "15 June 2023",
+      "image": "/assets/imgs/blog/3/2.jpg"
+    }
+  ]
+}

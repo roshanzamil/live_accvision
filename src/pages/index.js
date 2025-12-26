@@ -1,7 +1,6 @@
 import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import DigitalMarketingHero from "@/components/hero/DigitalMarketingHero";
-import DigitalMarketingBrand from "@/components/brand/DigitalMarketingBrand";
 import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
 import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
@@ -19,7 +18,6 @@ export default function DigitalMarketing() {
       <main>
         <RootLayout header="header1" footer="footer1">
           <DigitalMarketingHero />
-          <DigitalMarketingBrand />
           <DigitalMarketingAbout />
           <CreativeAgencyService />
           <DigitalMarketingTestimonial />

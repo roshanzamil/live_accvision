@@ -1,23 +1,24 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
 import Image from "next/image";
-import Blog11 from "../../../public/assets/imgs/blog/1.jpg";
-import Blog22 from "../../../public/assets/imgs/blog/2.jpg";
-import Blog33 from "../../../public/assets/imgs/blog/3.jpg";
-import Blog44 from "../../../public/assets/imgs/blog/4.jpg";
-import Blog55 from "../../../public/assets/imgs/blog/5.jpg";
-import Blog66 from "../../../public/assets/imgs/blog/6.jpg";
 import animationCharCome from "@/lib/utils/animationCharCome";
+import blogData from "@/data/blog.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Blog1 = () => {
   const charAnim = useRef();
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    setBlogs(blogData.blogs);
+  }, []);
+
   useEffect(() => {
     animationCharCome(charAnim.current);
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && blogs.length > 0) {
       let device_width = window.innerWidth;
       let tHero = gsap.context(() => {
         gsap.set(".blog__animation .blog__item", { x: 50, opacity: 0 });
@@ -57,7 +58,7 @@ const Blog1 = () => {
       });
       return () => tHero.revert();
     }
-  }, []);
+  }, [blogs]);
   return (
     <>
       <section className="blog__area-6 blog__animation">
@@ -67,255 +68,63 @@ const Blog1 = () => {
             <div className="col-xxl-8 col-xl-7 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title-2 animation__char_come" ref={charAnim}>
-                  We always <br />
-                  think
+                  Our latest <br />
+                  Insights
                 </h2>
               </div>
             </div>
             <div className="col-xxl-4 col-xl-5 col-lg-6 col-md-6">
               <div className="blog__text">
                 <p>
-                  Crafting new bright brands, unique visual systems and digital
-                  experience focused on a wide range of original collabs.{" "}
+                  Read our blog for the latest perspectives on accounting, tax, and business strategy. We are passionate about making financial knowledge accessible to everyone.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="row reset-grid">
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
+            {blogs.map((blog) => (
+              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4" key={blog.id}>
+                <article className="blog__item">
+                  <div className="blog__img-wrapper">
+                    <Link href="/blog-details">
+                      <div className="img-box">
+                        <Image
+                          priority
+                          width={440}
+                          height={330}
+                          className="image-box__item"
+                          src={blog.image}
+                          alt={blog.title}
+                        />
+                        <Image
+                          priority
+                          width={440}
+                          height={330}
+                          className="image-box__item"
+                          src={blog.image}
+                          alt={blog.title}
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <h4 className="blog__meta">
+                    <Link href="/category">{blog.category}</Link> . {blog.date}
+                  </h4>
+                  <h5>
+                    <Link href="/blog-details" className="blog__title">
+                      {blog.title}
+                    </Link>
+                  </h5>
+                  <Link href="/blog-details" className="blog__btn">
+                    Read More{" "}
+                    <span>
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
                   </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/blog">UI Design</Link> . 15 March 2019
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    Ways of lying to yourself about your new relationship.
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog22}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog22}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    How to manage a talented and successful de sign team
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog33}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog33}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/category">UI Design</Link> . 02 May 2022
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    How to bring fold to your startup company with Axtra
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog44}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog44}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/category">UI Design</Link> . 22 Dec 2018
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    Ways of lying to yourself about your new relationship.
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog55}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog55}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    How to manage a talented and successful de sign team
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
-                    <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog66}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog66}
-                        alt="BLog Thumbnail"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
-                </h4>
-                <h5>
-                  <Link href="/blog-details" className="blog__title">
-                    How to bring fold to your startup company with Axtra
-                  </Link>
-                </h5>
-                <Link href="/blog-details" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
+                </article>
+              </div>
+            ))}
           </div>
         </div>
       </section>
