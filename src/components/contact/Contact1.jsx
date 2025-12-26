@@ -1,3 +1,4 @@
+
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
 import { useEffect, useRef } from "react";
@@ -45,14 +46,17 @@ const Contact1 = () => {
                 </h3>
                 <ul>
                   <li>
-                    <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
+                    <a href="tel:+971569900478">+971 56 99 00 478</a>
                   </li>
                   <li>
-                    <a href="mailto:hello@example.com">hello@example.com</a>
+                    <a href="tel:+94777903682">+94 77 790 3682</a>
+                  </li>
+                  <li>
+                    <a href="mailto:sumith.accsolutions@gmail.com">sumith.accsolutions@gmail.com</a>
                   </li>
                   <li>
                     <span>
-                      230 Norman Street New York, <br /> QC (USA) H8R 1A1
+                      20th street, Deira - al murar, <br /> Dubai.
                     </span>
                   </li>
                 </ul>
