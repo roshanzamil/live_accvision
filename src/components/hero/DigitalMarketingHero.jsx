@@ -11,6 +11,7 @@ const DigitalMarketingHero = () => {
   const titleLeft = useRef();
   const titleRight = useRef();
   const heroTextAnim = useRef();
+  const subTitleRef = useRef();
 
   const videoCheck = useRef();
   const videoCloseSection = useRef();
@@ -61,16 +62,24 @@ const DigitalMarketingHero = () => {
       videoClose.style.display = "block";
       heroArea.current.classList.add("start-video");
       headerArea.classList.add("bg-white");
-      heroTextAnim.current.style.color = "#145274";
-      videoClose.style.color = "#145274";
+      subTitleRef.current.style.color = "#fff";
+      titleLeft.current.style.color = "#fff";
+      titleRight.current.style.color = "#fff";
+      heroTextAnim.current.style.color = "#fff";
+      videoClose.style.color = "#fff";
+      videoTitle.current.style.color = "#fff";
     } else {
       wrapper.current.style.zIndex = "999";
       video.style.display = "block";
       videoClose.style.display = "none";
       heroArea.current.classList.remove("start-video");
       headerArea.classList.remove("bg-white");
+      subTitleRef.current.style.color = "";
+      titleLeft.current.style.color = "";
+      titleRight.current.style.color = "";
       heroTextAnim.current.style.color = "";
-      video.style.color = "";
+      videoClose.style.color = "";
+      videoTitle.current.style.color = "";
     }
   };
   return (
@@ -81,7 +90,7 @@ const DigitalMarketingHero = () => {
             <div className="col-xxl-12">
               <div className="hero__inner-3">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-sub-title" style={{ color: "#145274" }}>Accounting</h2>
+                  <h2 className="sec-sub-title" ref={subTitleRef} style={{ color: "#145274" }}>Accounting</h2>
                   <h3
                     className="sec-title title-left"
                     ref={titleLeft}
