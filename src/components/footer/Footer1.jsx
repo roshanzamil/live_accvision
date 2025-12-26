@@ -168,10 +168,7 @@ export default function Footer1() {
               <div className="col-xxl-4 col-xl-4 col-lg-4">
                 <div className="footer__copyright-3">
                   <p>
-                    © 2022 - 2025 | Alrights reserved by{" "}
-                    <a href="https://wealcoder.com/" target="_blank">
-                      Wealcoder
-                    </a>
+                    © 2026 | All rights reserved by BroCrypt
                   </p>
                 </div>
               </div>
