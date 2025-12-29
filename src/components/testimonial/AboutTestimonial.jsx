@@ -1,10 +1,9 @@
 
-import { FreeMode, Navigation } from "swiper";
+import { FreeMode, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 
@@ -50,36 +49,6 @@ const AboutTestimonial = () => {
                           </p>
                           <h3 className="testimonial__author">Roshan</h3>
                           <h4 className="testimonial__role">Founder, BroCrypt</h4>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide className="swiper-slide ">
-                      <div className="testimonial__slide">
-                        <div className="testimonial__inner-2">
-                          <h2 className="testimonial__title-2">
-                            Strategic Tax Savings
-                          </h2>
-                          <p className="testimonial__text-2">
-                            Tax planning was always a major source of stress for our company. Accvision's strategic advice not only made the process painless but also identified significant savings we had been missing for years. Their expertise is truly top-tier.
-                          </p>
-                          <h3 className="testimonial__author">Michael Rodriguez</h3>
-                          <h4 className="testimonial__role">Director, R&D Innovations Inc.</h4>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                      <div className="testimonial__slide">
-                        <div className="testimonial__inner-2">
-                          <h2 className="testimonial__title-2">
-                            Effortless Business Setup
-                          </h2>
-                          <p className="testimonial__text-2">
-                            Starting my gallery felt like navigating a maze of paperwork. Accvision handled our entire business setup, from registration to licensing, with incredible efficiency. They took the complexity out of the process, letting me focus on the art.
-                          </p>
-                          <h3 className="testimonial__author">Emily Davis</h3>
-                          <h4 className="testimonial__role">Owner, Artisan's Gallery</h4>
                         </div>
                       </div>
                     </SwiperSlide>

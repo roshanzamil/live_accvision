@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import { Navigation, FreeMode } from "swiper";
+import { Navigation, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Testimonial31 from "../../../public/assets/imgs/testimonial/3/1.jpg";
 import Testimonial32 from "../../../public/assets/imgs/testimonial/3/2.jpg";
@@ -123,42 +123,6 @@ const DigitalMarketingTestimonial = () => {
                         <h3 className="client__role-3">Founder, BroCrypt</h3>
                       </div>
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="testimonial__slide-3">
-                        <p>
-                          Tax planning was always a major source of stress for our company. Accvision's strategic advice not only made the process painless but also identified significant savings we had been missing for years. Their expertise is truly top-tier.
-                        </p>
-                        <h2 className="client__name-3">Michael Rodriguez</h2>
-                        <h3 className="client__role-3">Director, R&D Innovations Inc.</h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="testimonial__slide-3">
-                        <p>
-                          Starting my gallery felt like navigating a maze of paperwork. Accvision handled our entire business setup, from registration to licensing, with incredible efficiency. They took the complexity out of the process, letting me focus on the art.
-                        </p>
-                        <h2 className="client__name-3">Emily Davis</h2>
-                        <h3 className="client__role-3">Owner, Artisan's Gallery</h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="testimonial__slide-3">
-                        <p>
-                          The annual trade license renewal was always a headache. Accvision handles it for us now, and it’s completely stress-free. Their proactive and timely service ensures we're always compliant, which is a huge weight off our shoulders.
-                        </p>
-                        <h2 className="client__name-3">David Lee</h2>
-                        <h3 className="client__role-3">General Manager, Lee's Logistics</h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="testimonial__slide-3">
-                        <p>
-                          We engaged Accvision to help us implement better internal controls, and the results have been phenomenal. Our processes are more efficient, and their team provided invaluable support that has set us up for sustainable growth.
-                        </p>
-                        <h2 className="client__name-3">Jessica Thompson</h2>
-                        <h3 className="client__role-3">COO, BuildRight Construction</h3>
-                      </div>
-                    </SwiperSlide>
                   </div>
                   <div
                     style={{ cursor: "pointer" }}
@@ -189,8 +153,8 @@ const DigitalMarketingTestimonial = () => {
           />
           <Image
             priority
-            width={90}
-            height={90}
+            width={170}
+            height={170}
             src={Testimonial32}
             alt="Satisfied customer"
             className="testimonial3__img-2"
@@ -198,8 +162,8 @@ const DigitalMarketingTestimonial = () => {
           />
           <Image
             priority
-            width={110}
-            height={110}
+            width={170}
+            height={170}
             src={Testimonial33}
             alt="Pleased business owner"
             className="testimonial3__img-3"
@@ -207,8 +171,8 @@ const DigitalMarketingTestimonial = () => {
           />
           <Image
             priority
-            width={230}
-            height={230}
+            width={170}
+            height={170}
             src={Testimonial34}
             alt="Client portrait"
             className="testimonial3__img-4"
@@ -216,8 +180,8 @@ const DigitalMarketingTestimonial = () => {
           />
           <Image
             priority
-            width={180}
-            height={180}
+            width={170}
+            height={170}
             src={Testimonial35}
             alt="Another happy client"
             className="testimonial3__img-5"
@@ -225,8 +189,8 @@ const DigitalMarketingTestimonial = () => {
           />
           <Image
             priority
-            width={140}
-            height={140}
+            width={170}
+            height={170}
             src={Testimonial36}
             alt="Customer smiling"
             className="testimonial3__img-6"
