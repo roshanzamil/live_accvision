@@ -100,8 +100,8 @@ const BlogRelated = ({ blogs }) => {
           </div>
         </div>
         <div className="row">
-          {blogs.slice(0, 2).map((blog) => (
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6" key={blog.id}>
+          {blogs.slice(0, 3).map((blog) => (
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6" key={blog.id}>
               <article className="blog__item">
                 <div className="blog__img-wrapper">
                   <Link href={`/blog/${blog.slug}`}>
