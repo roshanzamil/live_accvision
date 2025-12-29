@@ -43,13 +43,13 @@ const AboutTestimonial = () => {
                       <div className="testimonial__slide">
                         <div className="testimonial__inner-2">
                           <h2 className="testimonial__title-2">
-                            Incredible Accounting Support
+                            A True Partner in Success
                           </h2>
                           <p className="testimonial__text-2">
-                            Juggling everything as a new cafe owner was overwhelming. Accvision stepped in and completely streamlined our bookkeeping and payroll. Their team is responsive, professional, and genuinely cares about our success. I can't imagine running my business without them.
+                            Accvision transformed our financial operations. Their expertise and dedication are unmatched. They are a true partner in our success.
                           </p>
-                          <h3 className="testimonial__author">Sarah Chen</h3>
-                          <h4 className="testimonial__role">Founder, The Bloom Cafe</h4>
+                          <h3 className="testimonial__author">Roshan</h3>
+                          <h4 className="testimonial__role">Founder, BroCrypt</h4>
                         </div>
                       </div>
                     </SwiperSlide>

@@ -117,10 +117,10 @@ const DigitalMarketingTestimonial = () => {
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Juggling everything as a new cafe owner was overwhelming. Accvision stepped in and completely streamlined our bookkeeping and payroll. Their team is responsive, professional, and genuinely cares about our success. I can't imagine running my business without them.
+                          Accvision transformed our financial operations. Their expertise and dedication are unmatched. They are a true partner in our success.
                         </p>
-                        <h2 className="client__name-3">Sarah Chen</h2>
-                        <h3 className="client__role-3">Founder, The Bloom Cafe</h3>
+                        <h2 className="client__name-3">Roshan</h2>
+                        <h3 className="client__role-3">Founder, BroCrypt</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
