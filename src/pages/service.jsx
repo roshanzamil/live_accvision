@@ -3,7 +3,6 @@ import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import ServiceHero from "@/components/hero/ServiceHero";
 import Service1 from "@/components/service/Service1";
-import ServiceBrand from "@/components/brand/ServiceBrand";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 
 const Service = () => {
@@ -18,7 +17,6 @@ const Service = () => {
         <RootLayout header="header1" footer="footer1">
           <ServiceHero />
           <Service1 />
-          <ServiceBrand />
           <DigitalAgencyCTA />
         </RootLayout>
       </main>
