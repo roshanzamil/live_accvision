@@ -4,7 +4,6 @@ import Preloader from "@/components/preloader/Preloader";
 import CommonAnimation from "../CommonAnimation";
 import ScrollSmootherComponents from "../ScrollSmootherComponents";
 import CursorAnimation from "../CursorAnimation";
-import Switcher from "../Switcher";
 import ScrollTop from "../ScrollTop";
 import Header1 from "@/components/header/Header1";
 import Footer1 from "@/components/footer/Footer1";
@@ -83,12 +82,6 @@ export default function RootLayout({
         </div>
         <Preloader />
         <CursorAnimation cursor1={cursor1} cursor2={cursor2} />
-        <Switcher
-          setMode={setMode}
-          mode={mode}
-          cursor1={cursor1}
-          cursor2={cursor2}
-        />
         <ScrollTop />
         <HeaderContent header={header} navData={navData} />
         <div id="smooth-wrapper">
