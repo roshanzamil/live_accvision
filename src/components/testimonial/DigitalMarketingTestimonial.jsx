@@ -181,7 +181,7 @@ const DigitalMarketingTestimonial = () => {
           <Image
             priority
             width={170}
-            height={200}
+            height={170}
             src={Testimonial31}
             alt="testimonial Image"
             className="testimonial3__img"
@@ -189,7 +189,7 @@ const DigitalMarketingTestimonial = () => {
           <Image
             priority
             width={90}
-            height={100}
+            height={90}
             src={Testimonial32}
             alt="testimonial Image"
             className="testimonial3__img-2"
@@ -197,23 +197,23 @@ const DigitalMarketingTestimonial = () => {
           <Image
             priority
             width={110}
-            height={130}
+            height={110}
             src={Testimonial33}
             alt="testimonial Image"
             className="testimonial3__img-3"
           />
           <Image
             priority
-            width={330}
-            height={430}
+            width={230}
+            height={230}
             src={Testimonial34}
             alt="testimonial Image"
             className="testimonial3__img-4"
           />
           <Image
             priority
-            width={245}
-            height={278}
+            width={180}
+            height={180}
             src={Testimonial35}
             alt="testimonial Image"
             className="testimonial3__img-5"
@@ -221,7 +221,7 @@ const DigitalMarketingTestimonial = () => {
           <Image
             priority
             width={140}
-            height={160}
+            height={140}
             src={Testimonial36}
             alt="testimonial Image"
             className="testimonial3__img-6"
