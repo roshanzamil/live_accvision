@@ -105,16 +105,14 @@ const BlogRelated = ({ blogs }) => {
               <article className="blog__item">
                 <div className="blog__img-wrapper">
                   <Link href={`/blog/${blog.slug}`}>
-                    <div className="img-box">
                       <Image
                         priority
                         width={440}
                         height={330}
-                        className="image-box__item"
                         src={blog.image}
                         alt={blog.title}
+                        style={{width: '100%', height: 'auto'}}
                       />
-                    </div>
                   </Link>
                 </div>
                 <h4 className="blog__meta">
