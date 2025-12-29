@@ -65,11 +65,9 @@ const CreativeAgencyService = () => {
             <div className="col-xxl-12">
               <div className="service__items-7 animation_service_7">
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
-                      Accounting & <span>Bookkeeping</span>
-                    </h3>
-                  </Link>
+                  <h3 className="service__title-7">
+                    Accounting & <span>Bookkeeping</span>
+                  </h3>
                   <p>
                     We provide meticulous accounting and bookkeeping to ensure your financials are accurate and up-to-date.
                   </p>
@@ -80,11 +78,9 @@ const CreativeAgencyService = () => {
                   </ul>
                 </div>
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
-                      Tax <span>Services</span>{" "}
-                    </h3>
-                  </Link>
+                  <h3 className="service__title-7">
+                    Tax <span>Services</span>{" "}
+                  </h3>
                   <p>
                     Our expert tax services help you navigate complex tax laws and minimize your tax liabilities.
                   </p>
@@ -95,11 +91,9 @@ const CreativeAgencyService = () => {
                   </ul>
                 </div>
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
-                      Business <span>Setup</span>{" "}
-                    </h3>
-                  </Link>
+                  <h3 className="service__title-7">
+                    Business <span>Setup</span>{" "}
+                  </h3>
                   <p>
                     We assist with business registration and setup to get your new venture off to a strong start.
                   </p>
@@ -110,11 +104,9 @@ const CreativeAgencyService = () => {
                   </ul>
                 </div>
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
+                  <h3 className="service__title-7">
                     Trade License <span>Renewal</span>{" "}
-                    </h3>
-                  </Link>
+                  </h3>
                   <p>
                     We handle the annual renewal of your trade license, ensuring your business remains compliant.
                   </p>
@@ -125,13 +117,11 @@ const CreativeAgencyService = () => {
                   </ul>
                 </div>
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
-                      Business <span>Support</span>
-                    </h3>
-                  </Link>
+                  <h3 className="service__title-7">
+                    Business <span>Support</span>
+                  </h3>
                   <p>
-                   Streamline your operations with our business support services and internal control implementation.
+                    Streamline your operations with our business support services and internal control implementation.
                   </p>
                   <ul>
                     <li>+ Process Improvement</li>
@@ -140,13 +130,11 @@ const CreativeAgencyService = () => {
                   </ul>
                 </div>
                 <div className="service__item-7">
-                  <Link href="/service-details">
-                    <h3 className="service__title-7">
-                      Financial<span>Advisory</span>{" "}
-                    </h3>
-                  </Link>
+                  <h3 className="service__title-7">
+                    Financial<span>Advisory</span>{" "}
+                  </h3>
                   <p>
-                   Our advisory services provide the insights you need to achieve your financial objectives and grow your business.
+                    Our advisory services provide the insights you need to achieve your financial objectives and grow your business.
                   </p>
                   <ul>
                     <li>+ Budgeting & Forecasting</li>
