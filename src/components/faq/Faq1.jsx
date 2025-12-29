@@ -1,3 +1,4 @@
+
 import animationCharCome from "@/lib/utils/animationCharCome";
 import { useEffect, useRef } from "react";
 import { Accordion } from "react-bootstrap";
@@ -43,7 +44,7 @@ const Faq1 = () => {
 
                     <Accordion.Body className="accordion-body">
                       <p>
-                        We offer a comprehensive suite of financial services including accounting and bookkeeping, tax planning and preparation, business setup, trade license renewal, and business support services. Our goal is to be your one-stop-shop for all your business's financial needs.
+                        We offer a comprehensive suite of financial services including accounting and bookkeeping, tax planning and preparation, business setup, trade license renewal, and business support services. Our goal is to be your one-stop-shop for all your business&apos;s financial needs.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
@@ -103,7 +104,7 @@ const Faq1 = () => {
 
                     <Accordion.Body className="accordion-body">
                       <p>
-                        Getting started is easy! Simply reach out to us through our contact page to schedule a free consultation. We'll discuss your business needs, answer your questions, and create a customized plan to help you achieve your financial goals.
+                        Getting started is easy! Simply reach out to us through our contact page to schedule a free consultation. We&apos;ll discuss your business needs, answer your questions, and create a customized plan to help you achieve your financial goals.
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>

@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { Power1, gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
@@ -177,7 +178,7 @@ const DigitalMarketingWorkflow = () => {
                       <div className="research__info">
                         <h4 className="research__title">Client Satisfaction</h4>
                         <p>
-                          We pride ourselves on delivering services that consistently exceed our clients' expectations.
+                          We pride ourselves on delivering services that consistently exceed our clients&apos; expectations.
                         </p>
                       </div>
                     </div>
