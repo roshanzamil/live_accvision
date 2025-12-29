@@ -8,71 +8,81 @@ import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 import blogData from "@/data/blog.json";
 import { useEffect, useState } from "react";
 
-const BlogDetails1 = ({ blog }) => {
+const BlogDetailsContent = ({ blog }) => {
   if (!blog) {
     return null;
   }
   return (
-    <section className="blog__area-6 blog__animation">
-      <div className="container g-0 line pt-110 pb-110">
-        <span className="line-3"></span>
-        <div className="blog-details-content-wrapper">
-          <div className="blog__content">
-            <h1 className="blog__title">{blog.title}</h1>
-            <div className="blog__meta">
-              <span>{blog.date}</span> | <span>{blog.category}</span>
+    <section>
+      <div className="blog-details-container">
+        <div className="blog-header">
+          <h1 className="blog-title">{blog.title}</h1>
+          <p className="blog-meta">
+            <span>{blog.date}</span> | <span>{blog.category}</span>
+          </p>
+        </div>
+        <div className="blog-image-wrapper">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            width={850}
+            height={560}
+            style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="blog-body">
+          <p>{blog.content.introduction}</p>
+          {blog.content.points.map((point, index) => (
+            <div key={index}>
+              <h2>{point.title}</h2>
+              <p>{point.text}</p>
             </div>
-            <div className="blog__img-wrapper">
-              <Image
-                src={blog.image}
-                alt={blog.title}
-                width={850}
-                height={560}
-                style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
-              />
-            </div>
-            <div className="blog__text">
-              <p>{blog.content.introduction}</p>
-              {blog.content.points.map((point, index) => (
-                <div key={index}>
-                  <h2>{point.title}</h2>
-                  <p>{point.text}</p>
-                </div>
-              ))}
-              <p>{blog.content.conclusion}</p>
-            </div>
-          </div>
+          ))}
+          <p>{blog.content.conclusion}</p>
         </div>
       </div>
       <style jsx>{`
-        .blog-details-content-wrapper {
+        .blog-details-container {
           max-width: 850px;
           margin: 0 auto;
-          padding: 0 15px;
+          padding: 110px 15px;
+          color: #121212;
         }
-        .blog__content .blog__title {
+        .blog-header {
+          margin-bottom: 30px;
+          text-align: left;
+        }
+        .blog-title {
           font-size: 42px;
           font-weight: 700;
           margin-bottom: 20px;
+          line-height: 1.2;
         }
-        .blog__content .blog__meta {
+        .blog-meta {
           font-size: 16px;
           color: #666;
-          margin-bottom: 30px;
         }
-        .blog__img-wrapper {
-          margin-bottom: 30px;
+        .blog-image-wrapper {
+          margin-bottom: 40px;
         }
-        .blog__text h2 {
+        .blog-body {
+          font-size: 18px;
+          line-height: 1.7;
+        }
+        .blog-body h2 {
           font-size: 28px;
           font-weight: 600;
           margin-top: 40px;
           margin-bottom: 15px;
         }
-        .blog__text p {
-          font-size: 18px;
-          line-height: 1.7;
+        .blog-body p {
           margin-bottom: 20px;
+        }
+        body.dark .blog-details-container {
+            color: #f0f0f0;
+        }
+        body.dark .blog-meta {
+            color: #a0a0a0;
         }
       `}</style>
     </section>
@@ -84,7 +94,7 @@ const BlogRelated = ({ blogs }) => {
   return (
     <div className="blog__related">
       <div className="container">
-        <div className="row">
+        <div className="row pb-130">
           <div className="col-xxl-12">
             <h2 className="blog__related-title">Related Posts</h2>
           </div>
@@ -163,7 +173,7 @@ const BlogDetailsPage = () => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <BlogDetails1 blog={blog} />
+          <BlogDetailsContent blog={blog} />
           <BlogRelated blogs={relatedBlogs} />
           <DigitalAgencyCTA />
         </RootLayout>
