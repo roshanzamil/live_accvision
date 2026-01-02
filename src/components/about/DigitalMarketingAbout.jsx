@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "@/plugins";
@@ -32,6 +33,8 @@ const DigitalMarketingAbout = () => {
               <div className="about__img-3">
                 <Image
                   priority
+                  width={630}
+                  height={800}
                   style={{ width: "auto", height: "auto" }}
                   src={About31}
                   alt="Team of dedicated professionals at Accvision"
