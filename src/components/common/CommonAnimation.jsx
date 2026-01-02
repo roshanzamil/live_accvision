@@ -28,7 +28,7 @@ const CommonAnimation = ({ children }) => {
               callParallax(e);
             });
             function callParallax(e) {
-              parallaxIt(e, all_btn_cirlce[i], 80);
+              parallaxIt(e, all_btn_cirlce[i], 20);
             }
 
             function parallaxIt(e, target, movement) {
