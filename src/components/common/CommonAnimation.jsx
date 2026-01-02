@@ -16,45 +16,6 @@ const CommonAnimation = ({ children }) => {
 
       let tHero = gsap.context(() => {
         try {
-          const all_btns = gsap.utils.toArray(".btn_wrapper");
-          if (all_btns.length > 0) {
-            var all_btn = gsap.utils.toArray(".btn_wrapper");
-          } else {
-            var all_btn = gsap.utils.toArray("#btn_wrapper");
-          }
-          const all_btn_cirlce = gsap.utils.toArray(".btn-item");
-          all_btn.forEach((btn, i) => {
-            btn.addEventListener("mousemove", (e) => {
-              callParallax(e);
-            });
-            function callParallax(e) {
-              parallaxIt(e, all_btn_cirlce[i], 20);
-            }
-
-            function parallaxIt(e, target, movement) {
-              var $this = btn;
-              var relX = e.pageX - $this.offsetLeft;
-              var relY = e.pageY - $this.offsetTop;
-
-              gsap.to(target, 0.5, {
-                x:
-                  ((relX - $this.offsetWidth / 2) / $this.offsetWidth) *
-                  movement,
-                y:
-                  ((relY - $this.offsetHeight / 2) / $this.offsetHeight) *
-                  movement,
-                ease: Power2.easeOut,
-              });
-            }
-            btn.addEventListener("mouseleave", (e) => {
-              gsap.to(all_btn_cirlce[i], 0.5, {
-                x: 0,
-                y: 0,
-                ease: Power2.easeOut,
-              });
-            });
-          });
-
           let arr1 = gsap.utils.toArray("#btn_wrapper");
           let arr2 = gsap.utils.toArray(".btn_wrapper");
           const all_buttons = arr1.concat(arr2);
