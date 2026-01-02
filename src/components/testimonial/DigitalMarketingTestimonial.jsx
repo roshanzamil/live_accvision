@@ -113,17 +113,33 @@ const DigitalMarketingTestimonial = () => {
                   }}
                   className="testimonial__slider-3"
                 >
-                  <div className="swiper-wrapper">
-                    <SwiperSlide>
-                      <div className="testimonial__slide-3">
-                        <p>
-                          Accvision transformed our financial operations. Their expertise and dedication are unmatched. They are a true partner in our success.
-                        </p>
-                        <h2 className="client__name-3">Roshan</h2>
-                        <h3 className="client__role-3">Founder, BroCrypt</h3>
-                      </div>
-                    </SwiperSlide>
-                  </div>
+                  <SwiperSlide>
+                    <div className="testimonial__slide-3">
+                      <p>
+                        Accvision transformed our financial operations. Their expertise and dedication are unmatched. They are a true partner in our success.
+                      </p>
+                      <h2 className="client__name-3">Roshan</h2>
+                      <h3 className="client__role-3">Founder, BroCrypt</h3>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="testimonial__slide-3">
+                      <p>
+                        Navigating the complexities of tax law was a major headache for us until we found Accvision. Their team made everything clear and straightforward, saving us a significant amount on our tax bill. Highly recommended!
+                      </p>
+                      <h2 className="client__name-3">Sarah L.</h2>
+                      <h3 className="client__role-3">E-commerce Store Owner</h3>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="testimonial__slide-3">
+                      <p>
+                        As a new entrepreneur, I was overwhelmed with the business setup process. Accvision guided me through every step, from registration to licensing. Their support was invaluable in getting my company off the ground.
+                      </p>
+                      <h2 className="client__name-3">Michael B.</h2>
+                      <h3 className="client__role-3">Tech Startup CEO</h3>
+                    </div>
+                  </SwiperSlide>
                   <div
                     style={{ cursor: "pointer" }}
                     className="next-button swipper-btn"
