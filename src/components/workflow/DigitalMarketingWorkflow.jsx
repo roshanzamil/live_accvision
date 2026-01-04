@@ -214,7 +214,7 @@ const DigitalMarketingWorkflow = () => {
               </div>
               <div className="row">
                 <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                  <div className="counter__wrapper-3">
+                  <div className="counter__wrapper-3" style={{ gap: '30px 80px' }}>
                     <div className="counter__item-3">
                       <h2 className="counter__number count1">500+</h2>
                       <p>
@@ -249,7 +249,8 @@ const DigitalMarketingWorkflow = () => {
                   <div className="counter__img-3">
                     <Image
                       priority
-                      style={{ width: "100%", height: "auto" }}
+                      width={600}
+                      height={430}
                       src={Counter3}
                       alt="Image illustrating business growth and success"
                     />
