@@ -178,7 +178,7 @@ const DigitalMarketingWorkflow = () => {
                       <div className="research__info">
                         <h4 className="research__title">Client Satisfaction</h4>
                         <p>
-                          We pride ourselves on delivering services that consistently exceed our clients&apos; expectations.
+                          We pride ourselves on delivering services that consistently exceed our clients' expectations.
                         </p>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ const DigitalMarketingWorkflow = () => {
               </div>
               <div className="row">
                 <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                  <div className="counter__wrapper-3" style={{ gap: '10px 80px' }}>
+                  <div className="counter__wrapper-3" style={{ height: '85%' }}>
                     <div className="counter__item-3">
                       <h2 className="counter__number count1">500+</h2>
                       <p>
@@ -249,9 +249,8 @@ const DigitalMarketingWorkflow = () => {
                   <div className="counter__img-3">
                     <Image
                       priority
-                      width={500}
-                      height={358}
-                      style={{ width: '100%', height: 'auto' }}
+                      width={680}
+                      height={500}
                       src={Counter3}
                       alt="Image illustrating business growth and success"
                     />
