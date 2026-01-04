@@ -359,6 +359,16 @@
   letter-spacing: 1px;
 }
 
+.offcanvas__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offcanvas__close {
+  z-index: 9999;
+}
+
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
   .offcanvas__menu {
     padding-top: 142px;
