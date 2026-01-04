@@ -11,7 +11,7 @@ const Faq1 = () => {
   return (
     <>
       <section className="faq__area-6">
-        <div className="container g-0 line pt-0 pb-140">
+        <div className="container g-0 line pt-80 pb-140">
           <div className="line-3"></div>
           <div className="row">
             <div className="col-xxl-12">
