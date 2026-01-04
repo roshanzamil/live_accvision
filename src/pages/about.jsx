@@ -5,7 +5,6 @@ import AboutCounter from "@/components/counter/AboutCounter";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 import AboutHero from "@/components/hero/AboutHero";
 import AboutStory from "@/components/story/AboutStory";
-import AboutTestimonial from "@/components/testimonial/AboutTestimonial";
 import Faq1 from "@/components/faq/Faq1";
 import Head from "next/head";
 
@@ -22,7 +21,6 @@ const About = () => {
           <AboutHero />
           <AboutStory />
           <AboutCounter />
-          <AboutTestimonial />
           <Faq1 />
           <DigitalAgencyCTA />
         </RootLayout>
