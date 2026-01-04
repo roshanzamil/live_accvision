@@ -178,7 +178,7 @@ const DigitalMarketingWorkflow = () => {
                       <div className="research__info">
                         <h4 className="research__title">Client Satisfaction</h4>
                         <p>
-                          We pride ourselves on delivering services that consistently exceed our clients' expectations.
+                          We pride ourselves on delivering services that consistently exceed our clients&apos; expectations.
                         </p>
                       </div>
                     </div>
