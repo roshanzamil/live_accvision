@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Power1, gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
@@ -63,7 +64,7 @@ const AboutCounter = () => {
   return (
     <>
       <section className="counter__area">
-        <div className="container g-0 line pb-140 pt-140">
+        <div className="container g-0 line pt-140">
           <span className="line-3"></span>
 
           <div className="row">
