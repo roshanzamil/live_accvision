@@ -64,7 +64,7 @@ const AboutCounter = () => {
   return (
     <>
       <section className="counter__area">
-        <div className="container g-0 line pt-100">
+        <div className="container g-0 line pt-100 pb-140">
           <span className="line-3"></span>
 
           <div className="row">
