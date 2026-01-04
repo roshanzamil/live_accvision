@@ -270,7 +270,7 @@ const DigitalMarketingWorkflow = () => {
                       Have a project in mind?
                     </p>
                     <h2 className="cta__title-2">
-                      Let’s make something great together!
+                      Let&apos;s make something great together!
                     </h2>
                     <div className="btn_wrapper">
                       <Link
