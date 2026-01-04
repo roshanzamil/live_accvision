@@ -58,7 +58,7 @@ const AboutHero = () => {
           </div>
           <div className="row hero__about-row">
             <div className="col-xxl-12">
-              <div className="hero__about-video">
+              <div className="hero__about-video" style={{ maxHeight: "600px", overflow: "hidden" }}>
                 <video loop muted autoPlay playsInline>
                   <source src="assets/video/video.mp4" type="video/mp4" />
                 </video>
