@@ -42,13 +42,10 @@ const Contact1 = () => {
                 </h3>
                 <ul>
                   <li>
-                    <a href="tel:+971569900478">+971 56 99 00 478</a>
+                    <a href="tel:+971563506425">+971 56 350 6425</a>
                   </li>
                   <li>
-                    <a href="tel:+94777903682">+94 77 790 3682</a>
-                  </li>
-                  <li>
-                    <a href="mailto:sumith.accsolutions@gmail.com">sumith.accsolutions@gmail.com</a>
+                    <a href="mailto:info@accvisionaccounting.com">info@accvisionaccounting.com</a>
                   </li>
                   <li>
                     <span>
