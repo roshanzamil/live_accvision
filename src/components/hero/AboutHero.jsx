@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import Link from "next/link.js";
 import Award from "../../../public/assets/imgs/about/award.png";
@@ -17,7 +18,11 @@ const AboutHero = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="hero__about-content">
-                <h1 className="hero-title animation__word_come" ref={wordAnim}>
+                <h1
+                  className="hero-title animation__word_come"
+                  ref={wordAnim}
+                  style={{ fontSize: "60px" }}
+                >
                   We are your dedicated partners in financial clarity, providing expert accounting and business solutions to drive your success.
                 </h1>
                 <div className="hero__about-info">
