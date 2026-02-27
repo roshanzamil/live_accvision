@@ -1,15 +1,42 @@
 
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Contact1 = () => {
   const charAnim = useRef();
   const wordAnim = useRef();
+  const [status, setStatus] = useState(null); // 'sending', 'success', 'error'
+
   useEffect(() => {
     animationCharCome(charAnim.current);
     animationWordCome(wordAnim.current);
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        e.target.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
   return (
     <>
       <section className="contact__area-6">
@@ -57,13 +84,13 @@ const Contact1 = () => {
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
               <div className="contact__form">
-                <form action="assets/mail.php" method="POST">
+                <form onSubmit={handleSubmit}>
                   <div className="row g-3">
                     <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="text" name="name" placeholder="Name *" />
+                      <input type="text" name="name" placeholder="Name *" required />
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="email" name="email" placeholder="Email *" />
+                      <input type="email" name="email" placeholder="Email *" required />
                     </div>
                   </div>
                   <div className="row g-3">
@@ -75,6 +102,7 @@ const Contact1 = () => {
                         type="text"
                         name="subject"
                         placeholder="Subject *"
+                        required
                       />
                     </div>
                   </div>
@@ -83,17 +111,32 @@ const Contact1 = () => {
                       <textarea
                         name="message"
                         placeholder="Messages *"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div className="row g-3">
                     <div className="col-12">
                       <div className="btn_wrapper">
-                        <button className="wc-btn-primary btn-hover btn-item">
-                          <span></span> Send <br />
+                        <button 
+                          className="wc-btn-primary btn-hover btn-item" 
+                          type="submit"
+                          disabled={status === 'sending'}
+                        >
+                          <span></span> {status === 'sending' ? 'Sending...' : 'Send'} <br />
                           Messages <i className="fa-solid fa-arrow-right"></i>
                         </button>
                       </div>
+                      {status === 'success' && (
+                        <p className="mt-3" style={{ color: '#325841', fontWeight: 'bold' }}>
+                          Thank you! Your message has been sent successfully.
+                        </p>
+                      )}
+                      {status === 'error' && (
+                        <p className="mt-3 text-danger">
+                          Oops! Something went wrong. Please try again later.
+                        </p>
+                      )}
                     </div>
                   </div>
                 </form>
